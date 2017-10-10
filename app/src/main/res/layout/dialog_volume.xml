@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="166dp"
+        android:layout_height="166dp"
+        android:background="@drawable/cornor"
+       >
+
+        <TextView
+            android:id="@+id/tv_tip"
+            style="@style/text_match_13sp_color666"
+            android:layout_width="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:text="@string/move_up_cancel_record"/>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/iv_mic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mic_pic"/>
+
+            <ImageView
+                android:id="@+id/iv_volume_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/iv_mic"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/volume_10"/>
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

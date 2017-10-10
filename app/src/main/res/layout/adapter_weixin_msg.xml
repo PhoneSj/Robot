@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <!--左边的消息-->
+    <RelativeLayout
+        android:id="@+id/rl_left_msg"
+        android:layout_width="255dp"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/iv_child_portrait"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:src="@drawable/favicon_boy_pic"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_left_bubble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:layout_toRightOf="@+id/iv_child_portrait"
+            android:background="@drawable/selector_left_bubble"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:id="@+id/ll_left_volume"
+                android:visibility="visible"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp">
+
+                <ImageView
+                    android:id="@+id/iv_left_volume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:src="@drawable/volume_l_ico"/>
+
+                <TextView
+                    android:id="@+id/tv_left_volume_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:text="12s"
+                    android:textColor="@color/color_666"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_left_volume">
+
+                <RelativeLayout
+                    android:id="@+id/rl_left_voice_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <View
+                        android:id="@+id/view_left_line"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1px"
+                        android:background="@color/color_666"/>
+
+                    <TextView
+                        android:id="@+id/tv_left_voice_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="2dp"
+                        android:textColor="@color/color_666"
+                        android:textSize="13sp"
+                        android:layout_marginTop="10dp"
+                        android:text="哈好学习天天相似"
+                        />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_left_msg_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/color_666"
+                    android:textSize="13sp"
+                    android:lineSpacingExtra="2dp"
+                    android:text=""
+                    />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_unread_state"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:visibility="gone"
+            android:layout_toRightOf="@+id/rl_left_bubble"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/message"/>
+
+    </RelativeLayout>
+
+    <!--右边消息-->
+
+    <RelativeLayout
+        android:id="@+id/rl_right_msg"
+        android:layout_width="255dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_left_msg"
+        android:layout_alignParentRight="true"
+        >
+
+        <ImageView
+            android:id="@+id/iv_parent_portrait"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/favicon_dad_pic"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_right_bubble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:layout_toLeftOf="@+id/iv_parent_portrait"
+            android:background="@drawable/selector_right_bubble"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:id="@+id/ll_right_volume"
+                android:visibility="visible"
+                android:gravity="center_vertical|right"
+                android:orientation="horizontal"
+                android:layout_width="100dp"
+                android:layout_marginRight="4dp"
+                android:layout_height="30dp">
+
+                <TextView
+                    android:id="@+id/tv_right_volume_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12s"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_right_volume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:src="@drawable/volume_r_ico"/>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:layout_below="@+id/ll_right_volume">
+
+                <RelativeLayout
+                    android:id="@+id/rl_right_voice_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+                    <View
+                        android:id="@+id/view_right_line"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1px"
+                        android:background="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/tv_right_voice_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="2dp"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        android:layout_marginTop="10dp"
+                        android:text="哈好学习天天相似"
+                        />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_right_msg_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="2dp"
+                    android:visibility="visible"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:text=""
+                    />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/pb_right"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:visibility="gone"
+            android:layout_toLeftOf="@+id/rl_right_bubble"
+            android:layout_marginRight="4dp"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

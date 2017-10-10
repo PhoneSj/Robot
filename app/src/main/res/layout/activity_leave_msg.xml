@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            >
+        </RelativeLayout>
+
+        <SurfaceView
+            android:id="@+id/surface_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="45dp"
+        android:gravity="center_vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+       >
+
+        <com.zige.robot.view.CirclePercentView
+            android:id="@+id/circle_percent_view"
+            android:layout_centerInParent="true"
+            android:layout_width="82dp"
+            android:layout_height="82dp" />
+
+        <ImageView
+            android:id="@+id/iv_return_voice_click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_return_voice"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="40dp"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:id="@+id/iv_camera_transfer_click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_camera_transformation"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:layout_centerVertical="true"
+            android:visibility="visible"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_back_return"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_action"
+            />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

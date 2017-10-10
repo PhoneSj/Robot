@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray">
+
+    <include layout="@layout/title_bar_tv"/>
+
+    <com.zige.robot.view.LogArcView
+        android:id="@+id/log_view"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_rate_idle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:textColor="@color/color_ffa000"
+            android:text="空间:0%"/>
+
+        <TextView
+            android:id="@+id/tv_rate_story"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:textColor="@color/color_0ac1c5"
+            android:text="故事:0%"/>
+
+
+        <TextView
+            android:id="@+id/tv_rate_music"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:textColor="@color/color_fe5365"
+            android:text="音乐:0%"/>
+
+
+        <TextView
+            android:id="@+id/tv_rate_learn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:textColor="@color/color_5039fb"
+            android:text="学习:0%"/>
+
+
+        <TextView
+            android:id="@+id/tv_rate_other"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:textColor="@color/color_22b4ff"
+            android:text="其他:0%"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_game_time"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:visibility="gone"
+        android:background="@drawable/selector_view_press"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:textColor="@color/tv_777"
+            android:text="游戏时间"/>
+
+        <TextView
+            android:id="@+id/tv_game_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/tv_acacac"
+            android:text="0分钟"
+            />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/arrow_right"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:textColor="@color/tv_777"
+            android:text="电量信息"/>
+
+        <TextView
+            android:id="@+id/tv_battery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/tv_acacac"
+            android:text="100%"
+            />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="程序运行统计"
+        android:gravity="center_vertical"
+        android:paddingLeft="14dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:textColor="@color/tv_777"
+            android:text="当前运行"/>
+
+        <TextView
+            android:id="@+id/tv_current_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/tv_acacac"
+            android:text="无"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_operate_history"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/selector_view_press"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:layout_marginTop="1dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:textColor="@color/tv_777"
+            android:text="运行历史"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_right"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

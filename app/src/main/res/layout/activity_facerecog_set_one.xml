@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include_actionbar"
+        layout="@layout/title_bar_tv" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/include_actionbar"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:id="@+id/rlay_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/include_actionbar"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_click_hint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="18dp"
+                android:drawablePadding="10dp"
+                android:gravity="center_horizontal"
+                android:text="请点击下方按钮，上传或拍摄人脸照片"
+                android:textColor="@color/black_1"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/iv_photo_show"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:layout_below="@id/tv_click_hint"
+                android:layout_centerHorizontal="true"
+                android:background="@color/white"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/tv_to_pic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/iv_photo_show"
+                android:layout_alignLeft="@id/iv_photo_show"
+                android:layout_alignRight="@id/iv_photo_show"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_shape_glay_solid"
+                android:gravity="center_horizontal"
+                android:padding="15dp"
+                android:text="请选择照片"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/tv_rule_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/iv_photo_show"
+                android:layout_below="@id/iv_photo_show"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="18dp"
+                android:gravity="left"
+                android:text="拍摄规范"
+                android:textColor="@color/black_1"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_rule_conten"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/iv_photo_show"
+                android:layout_below="@id/tv_rule_title"
+                android:layout_marginBottom="15dp"
+                android:gravity="left"
+                android:text="请面对摄像头，并保证人脸全部出现在相片中"
+                android:textColor="@color/text5_color"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:id="@+id/llay_hints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/iv_photo_show"
+                android:layout_alignRight="@id/iv_photo_show"
+                android:layout_below="@+id/tv_rule_conten"
+                android:layout_marginLeft="-9dp"
+                android:layout_marginRight="-9dp"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <LinearLayout style="@style/face_recog_robots_linear">
+
+                    <ImageView style="@style/face_recog_robots_img"
+                        android:src="@drawable/setting_face_chek_1"/>
+
+                    <TextView style="@style/face_recog_robots_text" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/face_recog_robots_linear">
+
+                    <ImageView style="@style/face_recog_robots_img"
+                        android:src="@drawable/setting_face_chek_2"/>
+
+                    <TextView
+                        style="@style/face_recog_robots_text"
+                        android:text="错误" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/face_recog_robots_linear">
+
+                    <ImageView style="@style/face_recog_robots_img"
+                        android:src="@drawable/setting_face_chek_3"/>
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        style="@style/face_recog_robots_text"
+                        android:text="错误" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/face_recog_robots_linear">
+
+                    <ImageView style="@style/face_recog_robots_img"
+                        android:src="@drawable/setting_face_chek_4"/>
+
+                    <TextView
+                        style="@style/face_recog_robots_text"
+                        android:text="错误" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_face_next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/llay_hints"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/sl_login"
+                android:gravity="center"
+                android:paddingBottom="20dp"
+                android:text="下一步"
+                android:textColor="@drawable/selector_text_orange"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

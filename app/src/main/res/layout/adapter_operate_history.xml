@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+
+        >
+        <TextView
+            android:id="@+id/tv_run_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="14dp"
+            android:textSize="14sp"
+            android:textColor="@color/tv_777"
+            android:text="梦幻花园"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="14dp"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/tv_start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/tv_acacac"
+                android:text="2017.04.05"/>
+
+
+            <TextView
+                android:id="@+id/tv_end_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="12sp"
+                android:textColor="@color/tv_acacac"
+                android:text="19:30-20:00"/>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/bg_gray"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

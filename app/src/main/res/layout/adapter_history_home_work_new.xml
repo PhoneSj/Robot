@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="65dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        >
+        
+        <RelativeLayout
+            android:id="@+id/rl_left"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/language_circle">
+
+            <TextView
+                android:id="@+id/tv_class"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="30dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:layout_centerInParent="true"
+                android:text="语文"
+                android:textSize="14sp"
+                android:textColor="@color/color_fe5265"/>
+
+            <TextView
+                android:id="@+id/tv_unread_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:gravity="center"
+                android:padding="4dp"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:text="2"
+                android:background="@drawable/message"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="未完成"
+                android:textSize="10sp"
+                android:textColor="@color/tv_acacac"
+                />
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017.04.12"
+                android:layout_marginTop="5dp"
+                android:textSize="10sp"
+                android:textColor="@color/tv_acacac"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/ll_right"
+            android:layout_toRightOf="@+id/rl_left"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="5dp"
+                android:textColor="@color/tv_777"
+                android:textSize="12sp"
+                android:lines="2"
+                android:ellipsize="end"
+                android:text="日记，每周二和周五一篇日记，每周二和周五一篇日记，每周二和周五一篇日记，每周二和周五一篇日记，每周二和周五一篇日记，每周二和周五一篇日记，每周二和周五一篇日记，每周二和周五一篇日记，每周二和周五一篇日记，每周二和周五一篇日记，每周二和周五一篇日记，每周二和周五一篇"/>
+
+            <TextView
+                android:id="@+id/tv_voice_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:drawableLeft="@drawable/voice_history_icon"
+                android:gravity="center"
+                android:text="2"
+                android:textSize="14sp"
+                android:visibility="gone"
+                android:textColor="@color/tv_777"/>
+
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

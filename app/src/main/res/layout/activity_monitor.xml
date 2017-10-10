@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:id="@+id/video_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.tencent.ilivesdk.view.AVRootView
+                android:id="@+id/av_root_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_title_action"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <RelativeLayout
+                android:id="@+id/rl_back_action"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/back_action"
+                    />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingRight="20dp"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                 android:gravity="center_vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_screen_shot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_video_screen_shot"/>
+
+                <ImageView
+                    android:id="@+id/iv_timeline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_video_time_line"
+                    android:layout_marginLeft="22dp"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="20dp">
+
+            <RelativeLayout
+                android:id="@+id/rl_sound"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:visibility="visible">
+                <ImageView
+                    android:id="@+id/iv_sound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/video_sound_on"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_video"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:visibility="gone">
+                <ImageView
+                    android:id="@+id/iv_video"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/video_video_off"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_control"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/iv_control"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/video_control_off"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_photo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:visibility="gone">
+                <ImageView
+                    android:id="@+id/iv_photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/video_photo_off"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_voice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/iv_voice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/video_voice_on"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_control_robot"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/video_control"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginTop="80dp"
+            android:layout_marginRight="25dp"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/rl_control_state"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/telecontrol_un_control"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:id="@+id/rl_front"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:visibility="visible"/>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_left"
+                    android:layout_width="30dp"
+                    android:layout_height="100dp"
+                    android:layout_centerVertical="true"
+                    android:visibility="visible"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/rl_back"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:visibility="visible"/>
+
+                <RelativeLayout
+                    android:id="@+id/rl_right"
+                    android:layout_width="30dp"
+                    android:layout_height="100dp"
+                    android:layout_centerVertical="true"
+                    android:visibility="visible"
+                    android:layout_alignParentRight="true"
+                    />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_vertical|left"
+            android:layout_marginLeft="25dp"
+            android:visibility="gone"
+           >
+
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                android:listSelector="@color/transparent"
+                android:divider="@null"
+                android:dividerHeight="5dp"></ListView>
+
+        </RelativeLayout>
+
+
+
+    </FrameLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_10"
+        android:paddingTop="9dp"
+        android:paddingBottom="9dp"
+        android:background="@color/white"
+        android:paddingLeft="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/item_robot_remind_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13:30"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/item_robot_remind_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="周一 二 三"
+            android:layout_marginTop="@dimen/space_5"
+            android:textSize="12sp"/>
+        <TextView
+            android:id="@+id/item_robot_remind_member"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="成员：爸爸"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/tv_777"
+            android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/item_robot_remind_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="内容内容内容内容内容内容内容内容内容"
+            android:textColor="@color/tv_777"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/item_robot_remind_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/english_on"/>
+</RelativeLayout>

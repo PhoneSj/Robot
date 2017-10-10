@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray">
+
+
+    <Button
+        android:id="@+id/btn_robot_scan"
+        android:layout_width="256dp"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/selector_robot_btn_yellow"
+        android:text="扫一扫"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_middle" />
+
+    <TextView
+        android:id="@+id/tv_robot_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_robot_scan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:lineSpacingExtra="6dp"
+        android:text="Hi，我是馒头，请收养我吧。"
+        android:textColor="@color/vm_gray_87"
+        android:textSize="@dimen/textsize_normal" />
+
+</RelativeLayout>

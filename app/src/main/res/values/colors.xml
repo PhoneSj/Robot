@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBackground">#EEEEEE</color>
+    <color name="colorCard">#FFFFFF</color>
+    <color name="colorText">#2C2C2C</color>
+    <color name="colorLogo">#FED530</color>
+
+    <color name="window_background">#EBEBEB</color>
+
+    <color name="transparent">#00000000</color>
+
+
+    <color name="color_777777">#777777</color>
+    <color name="glay_btn_pic_select">#80180b0c</color>
+
+
+    <color name="gray">#ADADAD</color>
+
+
+    <color name="text5_color">#7a7a7a</color>
+
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="black_1">#030303</color>
+
+    <color name="tv_1e0d0a">#1e0d0a</color>
+    <color name="tv_orange">#ffa308</color>
+    <color name="bg_gray">#efeff4</color>
+    <color name="tv_777">#777777</color>
+    <color name="tv_bdbdbd">#bdbdbd</color>
+    <color name="tv_464646">#464646</color>
+    <color name="tv_acacac">#acacac</color>
+    <color name="pop_backgroud">#80000000</color>
+
+    <drawable name="bg_ffa308">#ffa308</drawable>
+    <drawable name="bg_fe5265">#fe5265</drawable>
+    <drawable name="bg_white">#fff</drawable>
+    <drawable name="drwable_black">#80000000</drawable>
+
+    <color name="color_fe5265">#fe5265</color>
+    <color name="color_22b4ff">#22b4ff</color>
+    <color name="color_ffa001">#ffa001</color>
+    <color name="color_0ac1c5">#0ac1c5</color>
+    <color name="color_595959">#595959</color>
+    <color name="color_ffab1f">#ffab1f</color>
+    <color name="color_ffa000">#ffa000</color>
+    <color name="color_fe5365">#fe5365</color>
+    <color name="color_5039fb">#5039fb</color>
+    <color name="color_6c6c6c">#6c6c6c</color>
+    <color name="color_bfbfbf">#bfbfbf</color>
+    <color name="color_393939">#393939</color>
+    <color name="color_363636">#363636</color>
+    <color name="color_afafaf">#afafaf</color>
+
+    <color name="color_666">#666</color>
+    <color name="color_999">#999</color>
+
+
+    ////日历
+    <color name="txtv_yellow">#ffb539</color>
+    <color name="txtv_black">#595959</color>
+    <color name="txtv_item_black">#cacaca</color>
+    <color name="txtv_item_next">#0a0a0a</color>
+
+    <color name="call_main_gray_light">#cccccc</color>
+    <color name="call_main_gray_dark">#7c7c7c</color>
+
+
+    <!--白色-->
+    <color name="vm_white_100">#ffffffff</color>
+    <color name="vm_white_87">#ddffffff</color>
+    <color name="vm_white_54">#89ffffff</color>
+    <color name="vm_white_38">#61ffffff</color>
+    <color name="vm_white_12">#1effffff</color>
+
+    <!--黑色-->
+    <color name="vm_black_100">#ff212121</color>
+    <color name="vm_black_87">#dd212121</color>
+    <color name="vm_black_54">#89212121</color>
+    <color name="vm_black_38">#61212121</color>
+    <color name="vm_black_12">#1e212121</color>
+
+    <!--灰色-->
+    <color name="vm_gray_100">#ff727272</color>
+    <color name="vm_gray_87">#dd727272</color>
+    <color name="vm_gray_54">#89727272</color>
+    <color name="vm_gray_38">#61727272</color>
+    <color name="vm_gray_12">#1e727272</color>
+
+    <!--灰白色-->
+    <color name="vm_gray_white_100">#ffe8e8e8</color>
+    <color name="vm_gray_white_87">#dde8e8e8</color>
+    <color name="vm_gray_white_54">#89e8e8e8</color>
+    <color name="vm_gray_white_38">#61e8e8e8</color>
+    <color name="vm_gray_white_12">#1ee8e8e8</color>
+
+    <!--红色-->
+    <color name="vm_red_100">#ffe51c23</color>
+    <color name="vm_red_87">#dde51c23</color>
+    <color name="vm_red_54">#89e51c23</color>
+    <color name="vm_red_38">#61e51c23</color>
+    <color name="vm_red_12">#1ee51c23</color>
+
+    <!--深红-->
+    <color name="vm_red_dark_100">#ffd01716</color>
+    <color name="vm_red_dark_87">#ddd01716</color>
+    <color name="vm_red_dark_54">#89d01716</color>
+    <color name="vm_red_dark_38">#61d01716</color>
+    <color name="vm_red_dark_12">#1ed01716</color>
+
+    <!--橙色-->
+    <color name="vm_orange_100">#ffff5722</color>
+    <color name="vm_orange_87">#ddff5722</color>
+    <color name="vm_orange_54">#89ff5722</color>
+    <color name="vm_orange_38">#61ff5722</color>
+    <color name="vm_orange_12">#1eff5722</color>
+
+    <!--蓝色-->
+    <color name="vm_blue_100">#ff2384fe</color>
+    <color name="vm_blue_87">#dd2384fe</color>
+    <color name="vm_blue_54">#892384fe</color>
+    <color name="vm_blue_38">#612384fe</color>
+    <color name="vm_blue_12">#1e2384fe</color>
+
+    <!--绿色-->
+    <color name="vm_green_100">#ff039e00</color>
+    <color name="vm_green_87">#dd039e00</color>
+    <color name="vm_green_54">#89039e00</color>
+    <color name="vm_green_38">#61039e00</color>
+    <color name="vm_green_12">#1e039e00</color>
+
+    <color name="vm_theme_background">#ff232323</color>
+
+    <color name="toast_bg">#dddfe0</color>
+
+    <color name="pay_result_success_bg">#74cb1f</color>
+    <color name="pay_result_fail_bg">#b6cd0b</color>
+
+    <color name="pick_black">#191919</color>
+    <color name="pick_light">#E6E7EB</color>
+    <color name="pick_white">#FFFFFF</color>
+    <color name="pick_transparent">#00000000</color>
+    <color name="pick_parse">#33999999</color>
+    <color name="pick_gray">#AFB0B3</color>
+    <color name="pick_green">#00C07F</color>
+    <color name="pick_blue">#35C8E6</color>
+    <color name="pick_placeholder">#c5e1e1e1</color>
+    <color name="pick_bottom">#E5E5E5</color>
+
+</resources>

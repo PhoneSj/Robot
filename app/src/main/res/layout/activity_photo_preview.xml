@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/vm_gray_38">
+
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/ic_back"/>
+
+        <TextView
+            android:id="@+id/tv_current_page"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/tv_back"
+            android:gravity="center"
+            android:text="1/5"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_middle"/>
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/selector_album_delete_tv"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_normal"/>
+
+        <TextView
+            android:id="@+id/tv_move"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/tv_delete"
+            android:background="@drawable/selector_album_delete_tv"
+            android:gravity="center"
+            android:text="移动"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_normal"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_save"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/selector_album_save_tv"
+        android:gravity="center"
+        android:text="保存到手机"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_normal"/>
+
+</RelativeLayout>

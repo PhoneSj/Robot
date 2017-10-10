@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+                android:gravity="center"
+             >
+
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="180dp"
+        android:background="@drawable/cornor_big">
+
+        <LinearLayout
+            android:id="@+id/ll_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/tv_click_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/color_ffa001"
+                android:text="发送"
+                android:textSize="14sp"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/bg_gray"/>
+
+            <TextView
+                android:id="@+id/tv_click_right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/tv_777"
+                android:text="取消"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/ll_btn">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/bg_gray"
+                android:layout_alignParentBottom="true"/>
+
+            <TextView
+                android:id="@+id/tv_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/tv_464646"
+                android:gravity="center"
+                android:text="是否发送录制声音"
+                android:textSize="14sp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

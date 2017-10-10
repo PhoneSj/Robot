@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:background="@color/bg_gray">
+
+    <include
+        layout="@layout/title_bar_tv"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_info_click"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="57dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:background="@drawable/selector_view_press">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true">
+                <TextView
+                    android:id="@+id/tv_nick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/tv_777"
+                    android:text="主人：爸爸"/>
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/tv_777"
+                    android:layout_marginTop="4dp"
+                    android:text="账号:123456789"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow_right"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/bg_gray"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_qr_code"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:background="@drawable/selector_view_press"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="14sp"
+                android:textColor="@color/tv_777"
+                android:text="我的二维码"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow_right"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+             >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="14sp"
+                android:textColor="@color/tv_464646"
+                android:text="当前连接"/>
+
+            <TextView
+                android:id="@+id/tv_connect_robot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/tv_464646"
+                android:text="小猪佩琪"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_tu_cao"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:background="@drawable/selector_view_press">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/tv_777"
+                android:layout_centerVertical="true"
+                android:text="吐槽"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow_right"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

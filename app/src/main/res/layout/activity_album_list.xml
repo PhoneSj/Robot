@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 本地相册列表页面 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/include_actionbar"
+        layout="@layout/title_bar_tv" />
+
+
+    <GridView
+        android:layout_below="@id/include_actionbar"
+        android:id="@+id/id_gridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:clipChildren="true"
+        android:gravity="center"
+        android:horizontalSpacing="3dip"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="3dip"></GridView>
+
+    <RelativeLayout
+        android:id="@+id/id_bottom_ly"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:background="#e0000000"
+        android:visibility="gone"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/id_choose_dir"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:gravity="center_vertical"
+            android:text="@string/all_pic"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/id_total_count"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="@string/no_pic"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+</RelativeLayout>

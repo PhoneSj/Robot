@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar_tv" />
+
+    <LinearLayout style="@style/LinearLayout_height_white_133"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            style="@style/Text_color_777_40"
+            android:text="课程" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:textColor="@color/color_777777"
+            android:textSize="16sp"
+            android:layout_marginLeft="@dimen/space_60"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/study_time_edit_standard_time"
+    style="@style/LinearLayout_height_white_133"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/Text_color_777_40"
+            android:text="标准时间" />
+        <TextView
+            android:id="@+id/study_time_edit_standard_time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingRight="@dimen/space_12"
+            android:layout_marginLeft="@dimen/space_20"/>
+
+        <ImageView
+           style="@style/Image_right_arrow_blue" />
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/study_time_edit_custom_time"
+        style="@style/LinearLayout_height_white_133"
+        android:layout_marginTop="1dp">
+        <TextView
+            style="@style/Text_color_777_40"
+            android:text="自定义时间"
+            />
+        <TextView
+            android:id="@+id/study_time_edit_custom_time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingRight="@dimen/space_12"
+            android:layout_marginLeft="@dimen/space_20"/>
+        <ImageView
+            style="@style/Image_right_arrow_blue" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/study_time_edit_add_layout"
+        android:layout_width="match_parent"
+        android:layout_marginTop="27dp"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/study_time_edit_add_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/space_12"
+            android:background="@drawable/sl_btn_blue_long"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:text="添加"
+            android:paddingBottom="20dp"
+            android:textColor="@color/sl_tv_white_blue"
+            android:textSize="@dimen/text_size_15" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/study_time_edit_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/space_12"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/study_time_edit_del_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/space_12"
+            android:background="@drawable/choose_blu_on"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_14"
+            android:text="删除"
+            android:textColor="@color/color_22b4ff" />
+
+        <Button
+            android:id="@+id/study_time_edit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_12"
+            android:background="@drawable/sl_btn_blue"
+            android:gravity="center"
+            android:text="编辑"
+            android:textColor="@color/sl_tv_white_blue"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+</LinearLayout>

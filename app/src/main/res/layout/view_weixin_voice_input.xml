@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="@color/white"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_touch"
+            android:layout_width="286dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:background="@drawable/weixin_voice_input_normal"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/voice_speaker_ico"/>
+
+            <TextView
+                android:id="@+id/tv_touch_state"
+                style="@style/text_wrap_14sp_white"
+                android:layout_marginLeft="10dp"
+                android:text="按住说话"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

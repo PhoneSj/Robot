@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@drawable/cornor_big">
+
+        <LinearLayout
+            android:id="@+id/ll_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/tv_click_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/color_ffa001"
+                android:text="取消"
+                android:textSize="14sp"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/bg_gray"/>
+
+            <TextView
+                android:id="@+id/tv_click_right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/tv_777"
+                android:text="确定"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/ll_btn">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/bg_gray"
+                android:layout_alignParentBottom="true"/>
+
+            <EditText
+                android:id="@+id/et_add_type"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/cornor_black_stroke_bg"
+                android:hint="例如：美术"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_centerInParent="true"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/et_add_type"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:text="添加科目"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

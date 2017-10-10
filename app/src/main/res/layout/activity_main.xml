@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <com.zige.robot.view.MyVideoView
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <ImageView
+        android:id="@+id/iv_robot_log"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@drawable/logo_robot"
+        android:visibility="visible" />
+
+
+    <HorizontalScrollView
+        android:id="@+id/horizon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/ll_horizon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"></LinearLayout>
+    </HorizontalScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/ll_msg_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/horizon"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/dialogue_she"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="left|center"
+                android:lineSpacingExtra="2dp"
+                android:maxLines="10"
+                android:minHeight="50dp"
+                android:text=""
+                android:textColor="@color/tv_777"
+                android:textSize="15sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:gravity="right">
+
+            <TextView
+                android:id="@+id/tv_robot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/dialogue_me"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="left|center"
+                android:lineSpacingExtra="2dp"
+                android:maxLines="10"
+                android:minHeight="50dp"
+                android:text=""
+                android:textColor="@color/tv_777"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

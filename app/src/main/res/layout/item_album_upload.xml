@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher"/>
+
+    <RelativeLayout
+        android:id="@+id/ll_upload"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/vm_gray_87">
+
+        <TextView
+            android:id="@+id/tv_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="下载中..."
+            android:textColor="@color/white"/>
+
+        <ProgressBar
+            android:id="@+id/pb_upload"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_alignParentBottom="true"
+            android:progressTint="@color/txtv_yellow"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

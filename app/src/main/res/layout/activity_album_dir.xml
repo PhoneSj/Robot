@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_toolbar"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_dir"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/pick_white"/>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/vm_black_87"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/btn_new"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_album_create_btn"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="新建相册"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_album_confirm_btn"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="确定"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

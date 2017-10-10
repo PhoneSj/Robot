@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/bg_gray">
+
+   <include layout="@layout/title_bar_tv"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="45dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@color/white"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/color_363636"
+                android:text="作业描述"/>
+
+            <EditText
+                android:id="@+id/et_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="请输入内容"
+                android:textSize="14sp"
+                android:lineSpacingExtra="2dp"
+                android:textColor="@color/color_afafaf"
+                android:layout_marginLeft="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_complete_time_click"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:textColor="@color/color_363636"
+                android:text="完成期限"/>
+
+            <TextView
+                android:id="@+id/tv_completion_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请选择完成期限"
+                android:textSize="12sp"
+                android:textColor="@color/tv_777"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/arrow_right" />
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/ll_msg"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/cornor_orange"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:text="我的留言"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/white"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <ListView
+                    android:id="@+id/listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none"
+                    android:listSelector="@color/transparent"
+                    android:divider="@null"
+                    android:dividerHeight="8dp"></ListView>
+            </RelativeLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.zige.robot.view.VoiceRecordBtn
+            android:id="@+id/record_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="按住留言"
+            android:textSize="14sp"
+            android:textColor="@color/tv_777"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

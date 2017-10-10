@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="customGridViewAttrs">
+        <attr name="itemHeight" format="dimension"></attr>
+        <attr name="itemSelectedColor" format="color"></attr>
+        <attr name="itemSelectedTextColor" format="color"></attr>
+        <attr name="leftSpace" format="dimension"></attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension"/>
+        <attr name="civ_border_color" format="color"/>
+        <attr name="civ_border_overlay" format="boolean"/>
+        <attr name="civ_fill_color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="ToggleButton">
+        <attr name="borderWidthed" format="dimension">
+        </attr>
+        <attr name="offBorderColor" format="reference|color">
+        </attr>
+        <attr name="offColor" format="reference|color">
+        </attr>
+        <attr name="onColor" format="reference|color">
+        </attr>
+        <attr name="spotColor" format="reference|color">
+        </attr>
+        <attr name="animate" format="reference|boolean">
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="ViewfinderView">
+        <attr name="corner_color" format="color"/>
+        <attr name="laser_color" format="color"/>
+        <attr name="frame_color" format="color"/>
+        <attr name="mask_color" format="color"/>
+        <attr name="result_point_color" format="color"/>
+        <attr name="result_color" format="color"/>
+        <attr name="label_text_color" format="color"/>
+        <attr name="label_text" format="string"/>
+        <attr name="label_text_size" format="float"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="CircleButton">
+        <attr name="cb_color" format="color"/>
+        <attr name="cb_pressedRingWidth" format="dimension"/>
+    </declare-styleable>
+
+    <string-array name="openid_list"></string-array>
+    <string-array name="openkey_list"></string-array>
+
+    <declare-styleable name="ViewPager">
+        <attr name="orientation">
+            <enum name="horizontal" value="0"/>
+            <enum name="vertical" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="SwipeLayout">
+        <attr name="show_mode"
+              format="enum">
+            <enum name="pull_out"
+                  value="0"/>
+            <enum name="lay_down"
+                  value="1"/>
+            <enum name="stretch"
+                  value="2"/>
+        </attr>
+        <attr name="mainViewIndex"
+              format="integer"/>
+        <attr name="leftViewIndex"
+              format="integer"/>
+        <attr name="rightViewIndex"
+              format="integer"/>
+    </declare-styleable>
+</resources>

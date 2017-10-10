@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar_tv" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/study_time_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/color_666"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <LinearLayout
+            android:id="@+id/no_list_toast_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/learning_icon"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="您还没有相关设置"
+                android:layout_marginTop="@dimen/space_12"
+                android:textSize="@dimen/text_size_16"
+                android:textColor="@color/tv_1e0d0a"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请自行添加"
+                android:layout_marginTop="@dimen/space_12"
+                android:textSize="@dimen/text_size_16"
+                android:textColor="@color/tv_777"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+
+        <TextView
+            android:id="@+id/study_time_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_12"
+            android:background="@drawable/sl_btn_blue_long"
+            android:paddingBottom="20dp"
+            android:gravity="center"
+            android:text="添加"
+            android:textColor="@color/sl_tv_white_blue"
+            android:textSize="@dimen/text_size_14" />
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/pop_standard_time_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_35"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/pop_standard_time_cancel"
+                style="@style/Text_color_777_40"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="13dp"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/tv_464646" />
+
+            <TextView
+                android:id="@+id/pop_standard_time_ok"
+                style="@style/Text_color_777_40"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="13dp"
+                android:layout_marginRight="13dp"
+                android:gravity="center"
+                android:text="完成"
+                android:textColor="@color/color_22b4ff" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:gravity="center_vertical"
+            android:background="@color/window_background"
+            android:orientation="horizontal">
+
+            <com.zige.robot.view.PickerTimeView
+                android:id="@+id/study_time_start_house"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <com.zige.robot.view.PickerTimeView
+                android:id="@+id/study_time_start_minute"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="至"
+                android:textColor="@color/color_22b4ff"
+                android:textSize="@dimen/text_size_16" />
+
+            <com.zige.robot.view.PickerTimeView
+                android:id="@+id/study_time_end_house"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <com.zige.robot.view.PickerTimeView
+                android:id="@+id/study_time_end_minute"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

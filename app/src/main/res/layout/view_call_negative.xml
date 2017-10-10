@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_negative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/vm_white_54"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/call_main_robot_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="40dp">
+
+        <TextView
+            android:id="@+id/tv_call_negative_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="来自mento的视频通话"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_call_negative_available_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="可用通话剩余300分钟"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/call_main_robot" />
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="24dp">
+
+        <TableRow>
+
+            <!--不接听通话-->
+            <ImageButton
+                android:id="@+id/ibtn_call_negative_refuse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:background="@drawable/selector_vt_reject"
+                android:src="@drawable/ic_call_end_white_24dp" />
+
+            <!--接听通话-->
+            <ImageButton
+                android:id="@+id/ibtn_call_negative_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_column="1"
+                android:layout_marginLeft="96dp"
+                android:background="@drawable/selector_vt_answer"
+                android:src="@drawable/ic_call_white_24dp" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

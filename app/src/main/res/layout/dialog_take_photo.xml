@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 设置头像dialog -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom">
+
+    <LinearLayout
+        android:id="@+id/llay_btns_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_take_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_shape_white_top_coner"
+            android:gravity="center_horizontal"
+            android:paddingBottom="15dip"
+            android:paddingTop="15dip"
+            android:text="拍照" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_gray"></View>
+
+        <Button
+            android:id="@+id/btn_search_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_shape_white_bottom_coner"
+            android:gravity="center_horizontal"
+            android:paddingBottom="15dip"
+            android:paddingTop="15dip"
+            android:text="相册" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_cancel_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llay_btns_top"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_shape_white"
+        android:gravity="center_horizontal"
+        android:paddingBottom="15dip"
+        android:paddingTop="15dip"
+        android:text="@string/cancel"
+        android:textSize="14sp" />
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.zige.robot.fsj.ui.album.widget.MyToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/photo_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/pick_white"/>
+
+    <!--<include layout="@layout/pick_widget_select_layout"/>-->
+
+    <include layout="@layout/view_album_bottom"/>
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/TxImLibrary/TxImLibrary.iml" filepath="$PROJECT_DIR$/TxImLibrary/TxImLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baidufacerecog/baidufacerecog.iml" filepath="$PROJECT_DIR$/baidufacerecog/baidufacerecog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/colorrecolibrary/colorrecolibrary.iml" filepath="$PROJECT_DIR$/colorrecolibrary/colorrecolibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/httplibrary/httplibrary.iml" filepath="$PROJECT_DIR$/httplibrary/httplibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zigeMobile.iml" filepath="$PROJECT_DIR$/zigeMobile.iml" />
+    </modules>
+  </component>
+</project>

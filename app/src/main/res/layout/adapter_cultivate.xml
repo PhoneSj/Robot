@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingRight="24dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/cultivate_box_bottom">
+
+        <RelativeLayout
+            android:id="@+id/rl_cultivate_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+          android:padding="5dp"
+           >
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="74dp"
+                android:layout_height="74dp"
+                android:background="@drawable/clean_room"/>
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_complete_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/complete_off"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_toRightOf="@+id/rl_cultivate_log"
+         android:layout_toLeftOf="@+id/iv_complete_state"
+         android:layout_centerVertical="true"
+         android:layout_marginLeft="10dp"
+         android:layout_marginRight="10dp"
+         android:orientation="vertical">
+
+         <TextView
+             android:id="@+id/tv_task_num"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textColor="@color/tv_777"
+             android:textSize="12sp"
+             android:text="任务:1"/>
+
+         <TextView
+             android:id="@+id/tv_task_content"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textColor="@color/tv_777"
+             android:textSize="12sp"
+             android:text="任务:整理玩具"
+             android:layout_marginTop="8dp"/>
+
+
+     </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

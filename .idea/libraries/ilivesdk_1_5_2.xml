@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="ilivesdk-1.5.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/abd5417fa2912cdcd3bafcb27af95018ba870046/output/jars/libs/soload.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/abd5417fa2912cdcd3bafcb27af95018ba870046/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/abd5417fa2912cdcd3bafcb27af95018ba870046/output/jars/libs/tls_sdk.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/abd5417fa2912cdcd3bafcb27af95018ba870046/output/jars/libs/imsdk.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/abd5417fa2912cdcd3bafcb27af95018ba870046/output/jars/libs/mobilepb.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/abd5417fa2912cdcd3bafcb27af95018ba870046/output/jars/libs/beacon_android_v1.9.9.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/abd5417fa2912cdcd3bafcb27af95018ba870046/output/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/abd5417fa2912cdcd3bafcb27af95018ba870046/output/jars/libs/bugly_2.4.0_imsdk_release.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/abd5417fa2912cdcd3bafcb27af95018ba870046/output/jars/libs/qalsdk.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/abd5417fa2912cdcd3bafcb27af95018ba870046/output/jars/libs/qavsdk.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/abd5417fa2912cdcd3bafcb27af95018ba870046/output/jars/libs/wup-1.0.0-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.tencent.ilivesdk/ilivesdk/1.5.2/6cc70af1f4a0cc1ab0e18c7ae625d75afb5bea38/ilivesdk-1.5.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

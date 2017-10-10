@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="53dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="15dp">
+
+    <ImageView
+        android:id="@+id/iv_dot"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        app:srcCompat="@drawable/add" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="2017-11-21 09:23" />
+
+    <TextView
+        android:id="@+id/tv_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_weight="1"
+        android:text="25元/1000分钟" />
+
+    <TextView
+        android:id="@+id/tv_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="充值成功" />
+</LinearLayout>

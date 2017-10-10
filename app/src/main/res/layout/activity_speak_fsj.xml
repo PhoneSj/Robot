@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray">
+
+    <include layout="@layout/view_toolbar"/>
+
+    <ImageView
+        android:id="@+id/iv_inpuy_sound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/voice_on"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_all_sound"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <!--<ListView-->
+    <!--android:id="@+id/listview"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_above="@+id/iv_order_sound"-->
+    <!--android:layout_below="@+id/title"-->
+    <!--android:layout_marginBottom="4dp"-->
+    <!--android:layout_marginTop="16dp"-->
+    <!--android:divider="@color/transparent"-->
+    <!--android:dividerHeight="8dp"-->
+    <!--android:scrollbars="none"></ListView>-->
+
+
+</RelativeLayout>

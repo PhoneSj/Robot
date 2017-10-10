@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray">
+
+    <include
+        layout="@layout/title_bar_tv"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/bg_gray"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+       >
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@null"
+            android:hint="请输入手机号码"
+            android:textSize="14sp"
+            android:textColor="@color/tv_777"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:inputType="number"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/bg_gray"/>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <EditText
+                android:id="@+id/et_v_code"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入验证码"
+                android:textSize="14sp"
+                android:textColor="@color/tv_777"
+                android:inputType="number"
+                />
+            
+            <TextView
+                android:id="@+id/tv_get_code"
+                android:minWidth="65dp"
+                android:layout_height="32dp"
+                android:layout_width="wrap_content"
+                android:background="@drawable/auth_code"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:inputType="number"
+                android:gravity="center"
+                android:text="获取验证码"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"/>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/bg_gray"/>
+
+        <EditText
+            android:id="@+id/et_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@null"
+            android:hint="请输入6-25位密码"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz012345678_"
+            android:textSize="14sp"
+            android:textColor="@color/tv_777"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:inputType="textPassword"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_gray"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始使用表示同意馒头的用户协议及隐私声明"
+            android:textSize="10sp"
+            android:textColor="#9d9d9d"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sl_login"
+            android:textColor="@drawable/selector_text_orange"
+            android:text="注册"
+            android:paddingBottom="20dp"
+            android:layout_marginTop="40dp"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

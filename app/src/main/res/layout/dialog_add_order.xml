@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/cornor"
+        android:paddingTop="16dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <TextView
+            android:id="@+id/tv_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/color_ffab1f"
+            android:text="添加快捷问候"
+            android:layout_gravity="center_horizontal"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="42dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:gravity="center"
+            android:background="@drawable/cornor_orange_stroke">
+
+            <EditText
+                android:id="@+id/et_import_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="馒头，馒头...你说中午吃什么?"
+                android:textColorHint="@color/tv_777"
+                android:textColor="@color/tv_777"
+                android:textSize="12sp"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_bottom_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btn_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="退出"
+                    android:background="@drawable/adopt_off"
+                    android:paddingBottom="10dp"
+                    android:textSize="30px"
+                    android:textColor="@color/tv_orange"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btn_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="添加"
+                    android:background="@drawable/sl_btn_orange"
+                    android:paddingBottom="10dp"
+                    android:textSize="30px"
+                    android:textColor="@drawable/selector_text_orange"
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

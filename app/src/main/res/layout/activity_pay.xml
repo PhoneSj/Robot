@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_toolbar"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/view_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rec_tips_pic"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/pay_dot_pink"
+                    android:drawablePadding="6dp"
+                    android:text="@string/pay_tips_one"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:drawableLeft="@drawable/pay_dot_pink"
+                    android:drawablePadding="6dp"
+                    android:text="@string/pay_tips_two"/>
+
+                <TextView
+                    android:id="@+id/tv_available_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:drawableLeft="@drawable/pay_dot_pink"
+                    android:drawablePadding="6dp"
+                    android:text="@string/pay_tips_three"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_scan"
+                style="@style/call_main_btn_base"
+                android:layout_marginTop="34dp"
+                android:background="@drawable/vt_white_btn_nor"
+                android:drawableLeft="@drawable/rec_scan_ico"
+                android:text="微信扫码支付"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

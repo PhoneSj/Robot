@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/vm_theme_background"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="false">
+
+    <!--通话界面容器-->
+    <RelativeLayout
+        android:id="@+id/layout_surface_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true">
+        <!--两个surfaceView-->
+    </RelativeLayout>
+
+    <!--操控界面容器-->
+    <RelativeLayout
+        android:id="@+id/layout_control"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <!--取消通话-->
+        <ImageButton
+            android:id="@+id/ibtn_call_control_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="left"
+            android:layout_margin="24dp"
+            android:background="@drawable/selector_vt_reject"
+            android:src="@drawable/ic_call_end_white_24dp"/>
+
+        <!--关闭麦克-->
+        <ImageButton
+            android:id="@+id/ibtn_call_control_mic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_margin="24dp"
+            android:background="@drawable/selector_vt_mic"/>
+
+        <!--转换摄像头-->
+        <ImageButton
+            android:id="@+id/ibtn_call_control_change_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/ibtn_call_control_mic"
+            android:layout_toLeftOf="@id/ibtn_call_control_mic"
+            android:background="@drawable/selector_vt_camera"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ibtn_call_control_cancel"
+            android:visibility="gone">
+            <!--扬声器-->
+            <ImageButton
+                android:id="@+id/ibtn_call_control_speaker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right"
+                android:background="@drawable/selector_vt_camera"
+                android:src="@drawable/ic_launcher"/>
+
+            <ImageButton
+                android:id="@+id/ibtn_call_control_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right"
+                android:background="@drawable/selector_vt_camera"
+                android:src="@drawable/ic_launcher"/>
+
+            <ImageButton
+                android:id="@+id/ibtn_call_control_screenshot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right"
+                android:background="@drawable/selector_vt_camera"
+                android:src="@drawable/ic_launcher"/>
+
+            <ImageButton
+                android:id="@+id/ibtn_call_control_record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right"
+                android:background="@drawable/selector_vt_camera"
+                android:src="@drawable/ic_launcher"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!--来电界面容器-->
+    <include
+        layout="@layout/view_call_negative"
+        android:visibility="gone"/>
+
+    <!--去电界面容器-->
+    <include
+        layout="@layout/view_call_positive"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/testView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="@color/gray"
+        android:visibility="gone"/>
+
+</android.support.design.widget.CoordinatorLayout>

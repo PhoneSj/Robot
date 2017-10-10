@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/cornor"
+        android:paddingTop="16dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/color_fe5265"
+                android:text="添加任务"
+                android:layout_centerInParent="true"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_dissmiss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cultivate_fork_off"/>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="42dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:gravity="center"
+            android:background="@drawable/cornor_red">
+
+            <EditText
+                android:id="@+id/et_import_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="添加标题"
+                android:textColorHint="@color/tv_777"
+                android:textColor="@color/tv_777"
+                android:textSize="12sp"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_btn_red_big"
+            android:layout_gravity="center_horizontal"
+            android:text="添加"
+            android:textSize="14sp"
+            android:textColor="@drawable/sl_tv_red"
+            android:layout_marginTop="20dp"/>
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

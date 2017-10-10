@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/vm_black_87"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="选择上传路径"
+        android:textColor="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_path"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_album_path_tv"
+            android:drawableLeft="@drawable/ic_folder"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:text="远程mento相册"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btn_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/selector_album_upload_btn"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="上传"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_normal"/>
+
+    </LinearLayout>
+
+</LinearLayout>

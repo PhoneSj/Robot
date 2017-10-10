@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+    <include
+        android:id="@+id/top_bar"
+        layout="@layout/title_bar_tv"/>
+
+    <RelativeLayout
+        android:layout_width="310dp"
+        android:layout_height="312dp"
+        android:background="@drawable/control"
+        android:layout_above="@+id/iv_voice"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp">
+
+        <ImageView
+            android:id="@+id/iv_control_up"
+            android:layout_width="192dp"
+            android:layout_height="43dp"
+            android:background="@drawable/up_off"
+            android:focusable="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"/>
+
+        <ImageView
+            android:id="@+id/iv_control_down"
+            android:layout_width="192dp"
+            android:layout_height="43dp"
+            android:background="@drawable/under_off"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="36dp"/>
+
+        <ImageView
+            android:id="@+id/iv_control_left"
+            android:layout_width="43dp"
+            android:layout_height="192dp"
+            android:background="@drawable/left_off"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="45dp"/>
+
+        <ImageView
+            android:id="@+id/iv_control_right"
+            android:layout_width="43dp"
+            android:layout_height="192dp"
+            android:background="@drawable/right_off"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="45dp"/>
+
+
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_voice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/voice_on"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

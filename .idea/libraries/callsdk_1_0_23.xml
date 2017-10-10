@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="callsdk-1.0.23">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/e581b48a34c15952f296c00abe285945002cc02f/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/e581b48a34c15952f296c00abe285945002cc02f/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.tencent.callsdk/callsdk/1.0.23/6174dc52a4f5979af7f778c1861b3a1368b5149/callsdk-1.0.23-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

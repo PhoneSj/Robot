@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_toolbar"/>
+
+    <ImageView
+        android:id="@+id/iv_call_main_robot"
+        android:layout_width="match_parent"
+        android:layout_height="295dp"
+        android:background="@drawable/call_main_robot_bg"
+        android:paddingBottom="16dp"
+        android:paddingTop="34dp"
+        android:src="@drawable/call_main_robot"/>
+
+    <Button
+        android:id="@+id/btn_call_main_vedio"
+        style="@style/call_main_btn_base"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/selector_vt_btn_blue"
+        android:drawableLeft="@drawable/call_main_vedio"
+        android:text="开始视频通话"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/btn_call_main_more"
+        style="@style/call_main_btn_base"
+        android:layout_marginTop="9dp"
+        android:background="@drawable/selector_vt_btn_white"
+        android:drawableLeft="@drawable/call_main_more"
+        android:text="充值通话时长"
+        android:textColor="@color/call_main_gray_dark"/>
+
+    <TextView
+        android:id="@+id/tv_call_main_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="可用通话剩余300分钟"
+        android:textColor="@color/call_main_gray_light"
+        android:textSize="@dimen/textsize_normal"/>
+
+</LinearLayout>

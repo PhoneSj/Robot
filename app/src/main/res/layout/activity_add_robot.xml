@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_open_robot_actvity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_gray"
+   >
+
+    <include
+        layout="@layout/title_bar_tv"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_gray"
+        android:paddingBottom="48dp">
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/sl_login"
+            android:text="添加馒头"
+            android:paddingBottom="20dp"
+            android:textColor="@drawable/selector_text_orange"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:layout_above="@id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hi,我是馒头，请收养我吧。"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="45dp"
+            android:textColor="@color/tv_777"
+            android:textSize="13sp"/>
+
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

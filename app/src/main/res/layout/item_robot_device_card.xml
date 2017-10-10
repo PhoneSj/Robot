@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/item_robot_device_layout"
+    android:layout_gravity="center">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/the_device_switch_on">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/item_robot_device_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tv_orange"
+                android:scaleType="centerCrop"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_2"
+                android:layout_marginTop="13dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_device_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="归属：小猪" />
+
+                <ImageView
+                    android:id="@+id/iv_device_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/space_8"
+                    android:background="@drawable/english_on" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_chengyuan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_2"
+                android:layout_marginTop="@dimen/space_13"
+                android:text="权限：爸爸" />
+
+            <TextView
+                android:id="@+id/tv_click_unbind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="@dimen/space_2"
+                android:layout_marginTop="@dimen/space_13"
+                android:layout_marginBottom="@dimen/space_13"
+                android:text="解除绑定" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

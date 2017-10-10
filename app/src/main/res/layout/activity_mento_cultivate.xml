@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/title_bar_iv"/>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@color/transparent"
+        android:dividerHeight="0dp"
+        android:scrollbars="none"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp">
+    </ListView>
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="300dp"
+        android:layout_height="87dp"
+        android:background="@drawable/selector_btn_red_big"
+        android:layout_gravity="center_horizontal"
+        android:text="添加任务"
+        android:textSize="14sp"
+        android:textColor="@drawable/sl_tv_red"
+        android:layout_marginTop="0dp"/>
+
+
+</LinearLayout>

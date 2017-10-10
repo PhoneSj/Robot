@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl_back_return"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_view_press"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_action"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_action"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_view_press"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:gravity="center"
+            android:text="跳过"
+            android:textSize="12sp"
+            android:textColor="@color/tv_777"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

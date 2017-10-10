@@ -1,0 +1,1 @@
+adb shell am start -a com.nibiru.videostart --es PATH sdcard/YN040363_thm.MP4 --ei TYPE_2DOR3D 0 --ei TYPE_MODEL 0 --ei TYPE_DECODE 1
